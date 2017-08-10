@@ -1,0 +1,104 @@
+#menu_list {
+    display: block;
+    width: 85%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #eff2ff;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(20, 20, 20, 0.2);
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: dodgerblue;
+}
+#menu_list li {
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 1.45em;
+    text-shadow: 1px 1px 0 #fff;
+    border-right: 1px solid #dae0e5;
+}
+
+#menu_list li a {
+    display: block;
+    float: left;
+    padding: 0 12px;
+    line-height: 78px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6c87c0;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#menu_list li:hover > a {
+    color: #7180a0;
+    background: #d9e2ee;
+}
+
+#menu_list ul {
+    position: absolute;
+    z-index: 10000;
+    top: 88px;
+    width: auto;
+    background: #fff;
+    display: none;
+    margin: 0;
+    padding: 7px 0;
+    list-style: none;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#menu_list ul:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 8px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: #fff transparent;
+}
+
+#menu_list ul:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 4px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+#menu_list ul li {
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+#menu_list ul li a {
+    display: block;
+    width: 100%;
+    padding: 6px 7px;
+    line-height: 1.4em;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#menu_list ul li a:hover {
+    background: #e9edf3;
+}
+#tab_p {
+    margin-top: 90px;
+}

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+        'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+<mapper namespace="ru.fedorenko.Beans.MapperAircraft">
+
+   <insert id="addAircraft" >
+      insert into bookings.aircrafts (aircraft_code, model, range) values (#{aircraft_code}, #{model}, #{range});
+   </insert>
+    <update id="updateAir">
+        UPDATE bookings.aircrafts SET  model = #{model}, range = #{range} WHERE aircraft_code = #{aircraft_code};
+    </update>
+    <select id="listAll" resultType="AircraftEntity">
+        SELECT aircraft_code, model, range FROM bookings.aircrafts;
+    </select>
+
+    <delete id="deleteAir">
+        DELETE FROM bookings.aircrafts WHERE aircraft_code = #{aircraft_code};
+    </delete>
+
+</mapper>
